@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details K-pop</title>
+    <link rel="stylesheet" href="Project.css">
+<link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="image/KVista-removebg-preview.png"  width="125px" alt="logo">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="Accounts Details.html">Account</a></li>
+                </ul>
+            </nav>
+            <div>
+                <a href="Cart.html"><img src="image/cartfb.png" alt="" width="30px" height="30px"></a>
+                <img src="image/menu.png" alt="" class="menu_bar" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+
+    <!-- ---Account Details---- -->
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="image/shopping fonr.png" width="100%" alt="image">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-button">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="idea">
+                        </div>
+                        <form id="Login">
+                            <input type="text" placeholder="UserName">
+                            <input type="password" placeholder="Password">
+                            <button type="Submit" class="button">LOGIN</button>
+                            <a href="">Forgot Password</a>
+                        </form> 
+                        <form id="Register">
+                            <input type="text" placeholder="UserName">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Confirm Password">
+
+                            <button type="Submit" class="button">Register</button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- footer -->
+<div class="footer"> 
+    <div class="ccontainer">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS mobile phone </p>
+                <div class="app-logo">
+                    <img src="image/google_play-removebg-preview.png" alt="">
+                    <img src="image/apple_store-removebg-preview.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="image/KVista-removebg-preview.png" alt="">
+                <p>KVista is an online shopping site.<br>
+                     If you are looking for budget-friendly<br>
+                     online shopping, then KVista <br>
+                     is the right place.
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Easy Returns & Replacement</li>
+                    <li>Blogs</li>
+                    <li>Policies & Rules</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">&#169; Copyright 2020 </p>
+    </div>
+</div>
+
+
+<!-- Javascript -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+      {
+        MenuItems.style.maxHeight = "200px";
+      }
+      else{
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+</script>
+
+<!-- Form -->
+<script>
+    var Login = document.getElementById("Login");
+    var Register = document.getElementById("Register");
+    var idea = document.getElementById("idea");
+
+    function register(){
+        Register.style.transform = "translateX(0px)";
+        Login.style.transform = "translateX(0px)";
+        idea.style.transform = "translateX(100px)";
+    }
+
+    function login(){
+        Register.style.transform = "translateX(300px)";
+        Login.style.transform = "translateX(300px)";
+        idea.style.transform = "translateX(0px)";
+    }
+
+
+
+
+
+</script>
+</body>
+</html>

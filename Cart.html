@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Details K-pop</title>
+    <link rel="stylesheet" href="Project.css">
+<link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="image/KVista-removebg-preview.png"  width="125px" alt="logo">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Product.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="Accounts Details.html">Account</a></li>
+                </ul>
+            </nav>
+            <div>
+                <img src="image/cartfb.png" alt="" width="30px" height="30px">
+                <img src="image/menu.png" alt="" class="menu_bar" onclick="menutoggle()">
+            </div>
+        </div>
+    </div>
+<!-- cART details -->
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>PRODUCT</th>
+            <th>QUANTITY</th>
+            <th>SUBTOTAL</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="image/image1.jpg" alt="image">
+                    <div>
+                        <p>Kpop BTS Love Yourself <br>Hoodie and Sweatpants</p>
+                        <small>Price: &#8377;5999</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377;5999</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="image/neckless.jpg" alt="image">
+                    <div>
+                        <p>University Trendz Unisex BTS V <br>
+                            Fan Combo - Kpop V <br>
+                            BTS Engraved Stainless Steel Ring</p>
+                        <small>Price: &#8377;1099</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377;1099</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="image/shoe1.jpg" alt="image">
+                    <div>
+                        <p>Kpop Bangtan Boys Canvas<br> 
+                            Shoes Jungkook Jimin V Suga </p>
+                        <small>Price: &#8377;7999</small><br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>&#8377;7999</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>&#8377;15097</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>&#8377;500</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>&#8377;15597</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<!-- footer -->
+<div class="footer"> 
+    <div class="ccontainer">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS mobile phone </p>
+                <div class="app-logo">
+                    <img src="image/google_play-removebg-preview.png" alt="">
+                    <img src="image/apple_store-removebg-preview.png" alt="">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="image/KVista-removebg-preview.png" alt="">
+                <p>KVista is an online shopping site.<br>
+                     If you are looking for budget-friendly<br>
+                     online shopping, then KVista <br>
+                     is the right place.
+                </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Easy Returns & Replacement</li>
+                    <li>Blogs</li>
+                    <li>Policies & Rules</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="Copyright">&#169; Copyright 2020 </p>
+    </div>
+</div>
+
+
+<!-- Javascript -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+      {
+        MenuItems.style.maxHeight = "200px";
+      }
+      else{
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+</script>
+</body>
+</html>
